@@ -38,6 +38,6 @@ def update(request, pk):
 
     if form.is_valid():
         form.save()
-        return redirect('url_update')
+        return redirect('url_listagem')
     data['form'] = form
     return render(request, 'contas/forms.html', data)
